@@ -1,2 +1,13 @@
+<style>
+html, body { padding: 0; border: 0; margin: 0; height: 100%; background: #333; }
+</style>
 <a class="twitter-timeline" href="https://twitter.com/bobbins/lists/osmc" data-widget-id="530971173589245952">Tweets from https://twitter.com/bobbins/lists/osmc</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+$(function () {
+	setInterval(function () {
+	$('iframe.twitter-timeline').attr('height', '100%').css('min-width', '60%').css('display', 'block').css('margin', 'auto');
+	}, 100);
+});
+</script>
